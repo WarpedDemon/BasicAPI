@@ -1,0 +1,13 @@
+C:\Users\warpe\source\repos\EndProject\EndProject\EndProject\bin\Debug\netstandard2.0\EndProject.dll.config
+C:\Users\warpe\source\repos\EndProject\EndProject\EndProject\bin\Debug\netstandard2.0\EndProject.deps.json
+C:\Users\warpe\source\repos\EndProject\EndProject\EndProject\bin\Debug\netstandard2.0\EndProject.dll
+C:\Users\warpe\source\repos\EndProject\EndProject\EndProject\bin\Debug\netstandard2.0\EndProject.pdb
+C:\Users\warpe\source\repos\EndProject\EndProject\EndProject\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\warpe\source\repos\EndProject\EndProject\EndProject\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\warpe\source\repos\EndProject\EndProject\EndProject\obj\Debug\netstandard2.0\EndProject.csproj.CoreCompileInputs.cache
+C:\Users\warpe\source\repos\EndProject\EndProject\EndProject\obj\Debug\netstandard2.0\EndProject.AssemblyInfoInputs.cache
+C:\Users\warpe\source\repos\EndProject\EndProject\EndProject\obj\Debug\netstandard2.0\EndProject.AssemblyInfo.cs
+C:\Users\warpe\source\repos\EndProject\EndProject\EndProject\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\warpe\source\repos\EndProject\EndProject\EndProject\obj\Debug\netstandard2.0\EndProject.dll
+C:\Users\warpe\source\repos\EndProject\EndProject\EndProject\obj\Debug\netstandard2.0\EndProject.pdb
+C:\Users\warpe\source\repos\EndProject\EndProject\EndProject\obj\Debug\netstandard2.0\EndProject.csprojAssemblyReference.cache

@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:EndProject"
+             x:Class="EndProject.MainPage">
+
+    <StackLayout>
+        <!-- Place new controls here -->
+        <Label Margin="15" Text="Contacts" x:Name="title"
+           HorizontalOptions="Center"
+           VerticalOptions="CenterAndExpand"/>
+        <Grid Margin="10" MinimumHeightRequest="150">
+            <Button Grid.Column="0" x:Name="Add" Text="Add Jobs" Clicked="AddButton"/>
+            <Entry Grid.Column="1" x:Name="textInput" Placeholder="Please enter job info!"/>
+            <Button Grid.Column="2" x:Name="Delete" Text="Clear Jobs" Clicked="DeleteButton"/>
+        </Grid>
+        <ListView x:Name="ContactsListDisplay" 
+                  ItemTapped="ChangeImportanceItemTapped"
+                  HorizontalOptions="Center" 
+                  VerticalOptions="CenterAndExpand">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout BackgroundColor="#eee"
+                        Orientation="Vertical">
+                            <StackLayout Orientation="Horizontal">
+                                <Label Text="{Binding Id}" IsEnabled="{Binding Display}" IsVisible="{Binding Display}" TextColor="{Binding TextColor}"/>
+                                <Label Text="{Binding Name}" IsEnabled="{Binding Display}" IsVisible="{Binding Display}" TextColor="{Binding TextColor}"/>
+                                <Label Text="{Binding Important}" IsEnabled="{Binding Display}" IsVisible="{Binding Display}" TextColor="{Binding TextColor}"/>
+                                <Label Text="{Binding Temp}" IsEnabled="{Binding Display}" IsVisible="{Binding Display}" TextColor="{Binding TextColor}"/>
+                                <Button Text="Delete Item" IsEnabled="{Binding DisplayDelete}" IsVisible="{Binding DisplayDelete}"
+                                        CommandParameter="{Binding .}" Clicked="DeleteItemSwipeButton"/>
+                                <StackLayout.GestureRecognizers>
+                                    <SwipeGestureRecognizer Direction="Left" CommandParameter="{Binding .}" Swiped="OnSwiped"/>
+                                    <SwipeGestureRecognizer Direction="Right" CommandParameter="{Binding .}" Swiped="OnSwiped"/>
+                                    <SwipeGestureRecognizer Direction="Up" CommandParameter="{Binding .}" Swiped="OnSwiped"/>
+                                    <SwipeGestureRecognizer Direction="Down" CommandParameter="{Binding .}" Swiped="OnSwiped"/>
+                                </StackLayout.GestureRecognizers>
+                            </StackLayout>
+                        </StackLayout>
+                        <ViewCell.ContextActions>
+                            <MenuItem Text="{Binding Important}" Clicked="ChangeImportance" CommandParameter="{Binding .}"/>
+                            <MenuItem Text="Delete" Clicked="DeleteItem" IsDestructive="True" CommandParameter="{Binding .}"/>
+                        </ViewCell.ContextActions>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+
+
+</ContentPage>
